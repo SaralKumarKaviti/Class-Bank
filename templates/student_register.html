@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='student_style.css') }}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body style="background:#023047;">
+  <div class="container">
+    <div class="title">Student Registration</div>
+    {% with messages=get_flashed_messages()%}
+    {% if messages %}
+    
+    {% for message in messages %}
+    <div class="alert">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>  -->
+         {{message}}.
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <div class="content">
+      <form action="" method="POST">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Student Name</span>
+            <input type="text" name = "studentName" placeholder="Enter Stduent Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Class Name</span>
+            <input type="text" name = "className" placeholder="Enter class name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">studentTotalAmount</span>
+            <input type="text" name = "studentTotalAmount" placeholder="Enter Total amount" required>
+          </div>
+          
+        </div>
+        
+        
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

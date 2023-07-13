@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TSWR Coding Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index_style.CSS')}}">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="topbar">
+  <img style="width:100%;" src="{{url_for('static',filename='images/header.png')}}">
+ 
+</div>
+
+<!-- <div class="topbar">
+  <div class="logo">
+  <img style="height:100%;" src="{{url_for('static', filename='images/logo.png')}}"/>
+  </div>
+<div>
+  <h1><span><img class="image" src="{{url_for('static', filename='images/ronaldrose.jfif')}}"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><img class="image" src="{{url_for('static', filename='images/sabitha.png')}}"></span>&nbsp;<span style="color:white;">TSWR Coding Academy,</span><span style="font-size:1.5vw;color:white;">Moinabad.</span> <span><img class="image" src="{{url_for('static', filename='images/kcr.jfif')}}"></span><span class="ss"><img  src="{{url_for('static', filename='images/ss2.png')}}"></span></h1>
+</div>
+</div> -->
+<div>
+<div style="overflow: auto;width: 100%;">
+  <div class="menu">
+
+       <a href="{{url_for('indexPage')}}">
+       <i class="fa fa-home" style="font-size:20px"></i>
+        <b>Home</b>
+       </a>
+     
+       <a href="{{url_for('academicStaffPage')}}">
+       <i class='fas fa-chalkboard-teacher' style='font-size:20px'></i>Academic Staff
+        
+       </a>
+
+       <a href="{{url_for('codingStaffPage')}}">
+       <i class='fas fa-user-graduate' style='font-size:20px'></i>
+       Coding Staff
+       </a>
+
+       <a href="{{url_for('timetablePage')}}"><i class='far fa-calendar-alt' style='font-size:20px'></i>
+       Time Table</a>
+
+       <a href="{{url_for('houseMasterLoginPage')}}"><i class='fas fa-university' style='font-size:20px'></i>
+       Class Bank</a>
+
+        <!-- <a class="dropdown-btn"><i class='fas fa-vote-yea' style='font-size:20px'></i>
+       Exam Seating Plan <i class="fa fa-caret-down"></i></a>
+       <div class="dropdown-container">
+          <a href="#">Exam dept Login</a>
+          <a href="#">Add Rooms</a>
+          <a href="#">View Rooms</a>
+          <a href="#">Generate</a>
+          <a href="#">Show Results</a>
+        </div> -->
+
+       <a href="{{url_for('onlineVotingPage')}}"><i class='fas fa-vote-yea' style='font-size:20px'></i>
+       Online Voting</a>
+    
+       <a href="{{url_for('applyLeaveLoginPage')}}"><i class='fas fa-external-link-alt' style='font-size:20px'></i>
+      Apply Leave</a>
+
+      <!-- <a href="{{url_for('classTeacherLoginPage')}}">
+      <i class='fa fa-mortar-board' style='font-size:20px'></i>
+      Attendance</a> -->
+      <a href="{{url_for('staffAttendancePage')}}">
+      <i class='fa fa-clock-o' style='font-size:20px'></i>
+      Staff Attendance</a>
+
+
+
+      <a href="{{url_for('wellnessCenterPage')}}">
+      <i class='fa fa-medkit' style='font-size:20px'></i>
+      Wellness Center</a>
+
+      <a href="{{url_for('schoolVisitReportsPage')}}">
+      <i class='far fa-file-alt' style='font-size:20px'></i>
+      Gate Visit Reports</a>
+
+      <a href="{{url_for('schoolIDCardsPage')}}">
+      <i class='fa fa-id-card' style='font-size:20px'></i>
+      ID Cards Generation</a>
+
+      <a href="{{url_for('enrolledHouseMasterLoginPage')}}">
+      <i class='fa fa-child' style='font-size:20px'></i>
+      Parent's Visit</a>
+
+      <a href="{{url_for('examinationBranchLoginPage')}}">
+      <i class='fa fa-leanpub' style='font-size:20px'></i>
+      Examination Branch</a>
+
+
+
+      <a href="#">                   
+      <i class='fas fa-images' style='font-size:20px'></i>
+      Gallery</a>
+    
+      <a href="#">
+      <i class='far fa-file-alt' style='font-size:20px'></i>
+      View Reports</a>
+
+      <a href="#">
+      <i class='fa fa-cutlery' style='font-size:20px'></i>
+      Mess Reports</a>
+
+
+
+  </div>
+
+  <div class="slideshow-container" >
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="{{url_for('static', filename='images/one.jpeg')}}" style="width: 100%;height:800px;">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <img src="{{url_for('static', filename='images/eight.jpeg')}}" style="width:100%;height:800px;">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="{{url_for('static', filename='images/four.jpeg')}}" style="width: 100%;height:800px;">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="{{url_for('static', filename='images/nine.jpeg')}}" style="width: 100%;height:800px;">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="{{url_for('static', filename='images/ten.jpeg')}}" style="width: 100%;height:800px;">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="{{url_for('static', filename='images/pic3.jpeg')}}" style="width:100%;height:800px;">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="{{url_for('static', filename='images/five.jpeg')}}" style="width: 100%;height:800px;">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="{{url_for('static', filename='images/three.jpeg')}}" style="width: 100%;height:800px;">
+      </div>
+      
+     </div> 
+      <div style="text-align:bottom">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span>
+      </div>
+<div class="About">
+    <h2 style="text-align:center;color:black;padding-top: 15px;">About</h2>
+    <p style="padding-left: 5px;padding-right: 5px;font-size: 17px;line-height: 1.8;">Code is the language of the modern world. One who doesn’t know coding is a digital illiterate in future. TSWREIS is a step ahead in visualizing the needs of 21st century and established Coding Schools to introduce the students to coding skills, which is a crucial investment in their future, to be ideally placed among top-tier tech companies. Coding schools help to ignite an early interest in digital technology by improving their cognitive skills and prepare young students for future jobs. They contribute to the new economy with a highly desirable skill set that stands the next generation in good stead. While learning coding, students learn many skills like problem-solving, organization, Maths, designing, animation and building video games. It also helps them to express themselves creatively. To catch them young, TSWREIS has taken the initiative of establishing coding schools.</p>
+  </div>
+  <!-- <div class="principal">
+    <img src="{{url_for('static', filename='images/pri.png')}}"><br>
+    <p style="text-align: center;padding-top: 8px;color:black;"><b>Principal of Coding Academy</b></p>
+    <p style="text-align: center;color:black;"><b>Nagamanimala</b></p>
+    
+  </div>
+  <div class="rco">
+    <img src="{{url_for('static', filename='images/pri.png')}}"><br>
+    <p style="text-align: center;padding-top: 8px;color:black;"><b>Principal of Coding Academy</b></p>
+    <p style="text-align: center;color:black;"><b>Nagamanimala</b></p>
+    
+  </div> -->
+
+  <div class="cards" >
+    <div class="maincontainer" > 
+      <div class="thecard">
+        <div class="thefront">
+               <img src="{{url_for('static', filename='images/princi.jpeg')}}" style="width: 80%; height: 80%;"><br>
+               <p><b>Principal of Coding Academy<br>Nagamanimala</b></p>
+
+        </div>
+        
+      </div>
+
+
+      <div class="thecard">
+        <div class="thefront">
+        <img src="{{url_for('static', filename='images/rco.jpeg')}}" style="width:80%; height: 80%;"><br>
+        <p><b>RCO </b><br><b>Sharadha Venkatesh</b></p>
+        </div>
+
+      </div> 
+  </div>
+  </div> 
+
+
+</div>
+</div>
+
+<div class="foot">
+      <p style="text-align: center;padding-top:30px;padding-bottom: 30px; "><a style="text-decoration: none;color: white;"href="https://secure-space.in/">Secure Space Pvt Ltd.</a></p>
+</div>
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+      <script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+

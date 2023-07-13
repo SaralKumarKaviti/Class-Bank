@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index_style.CSS')}}">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TSWR Coding Academy</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        section{
+            height: 100vh;
+            width: 100%;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+         <img style="width:100%;" src="{{url_for('static',filename='images/header.png')}}">
+ 
+    </div>
+
+<!-- <div class="topbar">
+  <div class="logo">
+  <img style="height:100%;" src="{{url_for('static', filename='images/logo.png')}}"/>
+  </div>
+<div>
+  <h1><span><img class="image" src="{{url_for('static', filename='images/ronaldrose.jfif')}}"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><img class="image" src="{{url_for('static', filename='images/sabitha.png')}}"></span>&nbsp;<span style="color:white;">TSWR Coding Academy,</span><span style="font-size:1.5vw;color:white;">Moinabad.</span> <span><img class="image" src="{{url_for('static', filename='images/kcr.jfif')}}"></span><span class="ss"><img  src="{{url_for('static', filename='images/ss2.png')}}"></span></h1>
+</div>
+</div> -->
+<div>
+<div style="overflow: auto;width: 100%;">
+  <div class="menu">
+
+       <a href="{{url_for('indexPage')}}">
+       <i class="fa fa-home" style="font-size:20px"></i>
+        <b>Home</b>
+       </a>
+     
+       <a href="{{url_for('academicStaffPage')}}">
+       <i class='fas fa-chalkboard-teacher' style='font-size:20px'></i>Academic Staff
+        
+       </a>
+
+       <a href="{{url_for('codingStaffPage')}}">
+       <i class='fas fa-user-graduate' style='font-size:20px'></i>
+       Coding Staff
+       </a>
+
+       <a href="{{url_for('timetablePage')}}"><i class='far fa-calendar-alt' style='font-size:20px'></i>
+       Time Table</a>
+
+       <a href="{{url_for('houseMasterLoginPage')}}"><i class='fas fa-university' style='font-size:20px'></i>
+       Class Bank</a>
+    
+       <a href="{{url_for('applyLeaveLoginPage')}}"><i class='fas fa-external-link-alt' style='font-size:20px'></i>
+      Apply Leave</a>
+
+      <a href="#">
+      <i class='fa fa-medkit' style='font-size:20px'></i>
+      Wellness Center</a>
+
+      <a href="#">                   
+      <i class='fas fa-images' style='font-size:20px'></i>
+      Gallery</a>
+    
+      <a href="#">
+      <i class='far fa-file-alt' style='font-size:20px'></i>
+      View Reports</a>
+
+      <a href="#">
+      <i class='fa fa-cutlery' style='font-size:20px'></i>
+      Mess Reports</a>
+
+
+  </div>
+
+    <section></section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='js/jquery.fireworks.js')}}"></script>
+    <script>
+        $('section').fireworks({ 
+            sound: true, // sound effect
+            opacity: 0.5, 
+            width: '100%', 
+            height: '100%' 
+        });
+    </script>
+
+
+</div>
+</div>
+</body>
+</html>
